@@ -1,0 +1,102 @@
+
+body 
+{ background-color:#000000; 
+color:#fff;
+text-align:center;
+}
+#nav ul {
+    display:flex;
+}
+#nav ul li {
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.logo {
+    max-width: 200px;
+}
+.container{
+    max-width: 1000px;
+    margin:auto;
+}
+#nav, .top, .bio {
+	display:flex;
+    align-items: center;
+}
+.bio {
+    margin: 40px 0;
+}
+.bio div {
+    text-align:left;
+    padding-left:20px;
+}
+.top {
+    justify-content: space-between;
+}
+.heroimg {
+    background-size: cover;
+background-image: url("../images/hero.jpg");
+background-repeat:no-repeat;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content: center;
+min-height: 300px;
+ }
+ footer {
+     padding:20px;
+ }
+ footer ul {
+display:flex;
+ }
+ footer ul li {
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 10px;
+ }
+ <!--  My UX Skills section coded using CSS flex -->
+
+ .flex-Container {
+    display: flex;
+    flex-direction: row;
+    width: 33px;
+  }
+ .Mywork {
+    display: flex;
+    flex-direction: row;
+    width: 33px;
+  }
+  .Mywork {
+        display: grid;
+        justify-content: center;
+  }
+  .workGrid {
+    display: grid;
+    justify-content: space-evenly;
+    grid-area: Mywork;
+    }
+    .grid-container {
+        display:grid;
+        grid-template-areas:'Mywork';
+        grid-template-rows: 30px 30px;
+        grid-template-columns: auto;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+    @media only screen and (max-width: 600px) {
+        .flex-container{
+        flex-direction: column;
+        }
+          background-color: red;
+    }
+    #categoryGrid {
+        margin: 0px 5%;
+        display:grid;  
+        grid-template-rows:30px 30px;
+        grid-template-columns:auto; 
+        grid-template-areas:
+        "My UX skills"
+        "My work";
+    }
